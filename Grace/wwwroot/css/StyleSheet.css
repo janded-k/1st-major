@@ -1,0 +1,94 @@
+﻿body {
+    background-color: aliceblue;
+    margin: 0%;
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.majphopefuls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#con {
+    margin: 20px;
+}
+
+.lab {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.list ul {
+    list-style: none;
+}
+
+#navbar {
+    background-color: #3b5998;
+    height: 63px;
+    display: flex;
+    
+}
+
+    #navbar a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    #navbar ul {
+        margin: 8px 0 0 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    #navbar a:hover {
+        background-color: #ddd;
+        color: #000;
+        text-decoration: underline;
+    }
+
+.nexprev {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+    .nexprev a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .nexprev a:hover {
+            text-decoration: underline;
+            background-color: rgba(74, 58, 223, 0.295)
+        }  
+
+h1, p, label{
+    font-size: 2vw;
+}
+
+#direct{
+    float:right;
+}
+
+img{
+    max-width:100%;
+}
+
+@media screen and (max-width:768px) {
+   #navbar{
+       width:100%;
+   }
+}

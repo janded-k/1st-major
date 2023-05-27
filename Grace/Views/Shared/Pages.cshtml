@@ -1,0 +1,26 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+</head>
+<body>
+    <nav id="navbar">
+        <ul>        
+                     
+            <li><a asp-controller="Home" asp-action="Index">PDP</a></li>
+            <li><a asp-controller="Home" asp-action="Pdp">APC</a></li>
+            <li><a asp-controller="Home" asp-action="LP">LP</a></li>
+        </ul>
+    </nav>
+    
+ 
+    <div>
+        @RenderBody()
+    </div>
+
+     
+</body>
+</html>

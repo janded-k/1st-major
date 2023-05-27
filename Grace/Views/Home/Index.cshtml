@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <link rel="icon" href=""/>
+    <title>Political Minute</title>
+</head>
+<body>
+    <header id="main-header">
+            <div class="contain">               
+                <div id="first">
+                    <img src="./img/Coat_of_arms_of_Nigeria.svg.png" height="70" width="100"/>              
+                    <h1>Political Minute</h1>
+                </div>                             
+            </div>
+        </header>
+      <nav id="navbar">
+            <ul>
+                 <li>
+                <a  asp-controller= "Home" asp-action = "Index">PDP</a>
+              </li>
+
+              <li>
+                <a asp-controller= "Home" asp-action = "Pdp">APC</a>
+              </li>
+        
+              <li>
+                <a asp-controller= "Home" asp-action = "LP">LP</a>
+              </li>
+              
+            </ul>
+          </nav>
+
+        <div id="Pal">
+            <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="AppealCourtDismissesAtikuRequest" target="blank">               
+                <div class="image">
+                    <img src="./img/wike3.jpeg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Appeal Court Dismisses Atiku Request to inspect VAS reconfiguration</p>
+                </div>
+            </a>
+        </div>
+
+            <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="AtikuAndOthersWearBlackToProtestAtInecOffice" target="blank">               
+                <div class="image">
+                    <img src="./img/Atiku Protest.webp" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Atiku And Others Wear Black To Protest At Inec Office</p>
+                </div>
+            </a>
+        </div>
+
+         <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="PresidentialCandidateSignPeaceAccord" target="blank">               
+                <div class="image">
+                    <img src="./img/Peace Accord.webp" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Presidential Candidates Sign Peace Accord</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="AtikuCampaignSpokeSpersons" target="blank">               
+                <div class="image">
+                    <img src="./img/Dino and Bwala.jpeg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Atiku name Dino Melaye, Daniel Bwala as campaign spokesperson</p>
+                </div>
+            </a>
+        </div> 
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="PdpWinsOsunGuber" target="blank">               
+                <div class="image">
+                    <img src="./img/pdp_flag.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Pdp wins Osun Guber Election</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="AtikuPicksOkowaAsRunningMate" target="blank">               
+                <div class="image">
+                    <img src="./img/ifeanyi okowa.webp" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Atiku picks Okowa as running mate</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="AtikuWinsPdpPrimaries" target="blank">               
+                <div class="image">
+                    <img src="./img/Atiku-Abubakar.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Atiku wins pdp primaries Election</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="TambuwalStepsDownForAtiku" target="blank">               
+                <div class="image">
+                    <img src="./img/tambuwal.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Tambuwal steps down for Atiku</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="PeterObiDecampsFromPdp" target="blank">               
+                <div class="image">
+                    <img src="../img/Peter Obi.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>peter obi quits pdp, days before primaries</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" href="Saraki became first presidential aspirant to publish policy document.html" target="blank">               
+                <div class="image">
+                    <img src="./img/saraki policy document.png" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>saraki became first presidential aspirant to publish policy document</p>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="Over1500DelegateAttendSarakiDeclaration" target="blank">               
+                <div class="image">
+                    <img src="./img/Senate-President-Bukola-Saraki.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Over 1500 pdp Delegates attends saraki's declaration</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="WikeTakesPresidentialCampaignToBorno" target="blank">               
+                <div class="image">
+                    <img src="./img/wike1.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>Wike takes presidential campaign to borno</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="pal">
+            <a id="redirect" asp-controller="Pdp" asp-action ="ThoseWhoBoughtPdpPresidentialTicket" target="blank">               
+                <div class="image">
+                    <img src="./img/AA.jpg" width="100" height="100"/>
+                </div>
+                <div class="let">
+                    <p>List of those who bought pdp presidential ticket</p>
+                </div>
+            </a>
+        </div>
+      </div>
+</body>
+</html>

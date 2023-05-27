@@ -1,0 +1,86 @@
+﻿@{
+    Layout = "~/Views/Shared/Pages.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/StyleSheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="con">
+        <h1>Tinubu wins apc presidential primaries</h1>
+        <div class="lab">
+            <label>8 june, 2022</label>
+        </div>
+        <img src="./img/Tinubu-Wins-APC-Primary.jpg" alt="">
+        <p>
+            Bola Ahmed Tinubu has emerged as the apc flag bearer after winning the presidential primaries.
+            He won the election by a landslide after beating the likes of Vice President Yemi Osinbajo, former Minister of Transportation, 
+            Rotimi Amaechi, and the Senate President, Ahmad Lawan.
+        </p>
+
+        <p>
+            Governor Atiku Bagudu of kebbi state said "In line with the provisions of the constitution of our great party and by the power conferred on me as the Returning Officer of this special convention, I, Atiku Bagudu, do hereby declare Asiwaju Bola Ahmed Tinubu as the presidential 
+            candidate of our party in the 2023 presidential election."
+        </p>
+
+        <div class="list">
+            <p>
+                These are the number of votes gotten by each candidate
+            </p>
+             <ul>
+                 <li> Tinubu - 1,271 votes</li>
+                 <li>Amaechi - 316 votes</li>
+                 <li>Osibanjo - 235 votes</li>
+                 <li> Ahmed Lawan - 152 votes</li>
+                 <li> Yahaya Bello - 47 votes</li>
+                 <li> Rochas Okorocha - 0</li>
+                 <li>Ahmed Yerima - 0</li>
+                 <li>Ben Ayade - 37</li>
+             </ul>
+         </div>
+
+         <div class="nexprev">
+            <a asp-controller="Apc" asp-action="ThreeAspirantsSteppedDownForVc" >
+            <h4>Previous article</h4>
+            <p>Three aspirants have stepped down for Osibanjo <br> - Campaign DG</p>
+            </a>
+
+            <a asp-controller="Apc" asp-action="YouCanLickYourWounds" >
+                <h4>Next article</h4>
+                <p>You can now lick your wounds <br> Tinubu to Ahmed Lawan</p>
+                </a>
+         </div>
+
+         <div id="similar">
+            <h3><em>RELATED ARTICLE</em></h3>
+         </div>
+
+         <div class="gridlike">
+            <a id="redirect" href="presidentia form buyers.html">
+                <div class="pic"><img src="./img/Osinbajo-Tinubu-Amaechi.jpeg" alt="apc hopefuls" height="200" width="200"></div>
+                <div class="text"><p>List of Apc presidential <br> Aspirants</p></div>
+            </a>
+
+            <a id="redirect"  href="You can now lick your wounds Tinubu tells Ahmed lawan.html">
+                <div class="pic"><img src="./img/ahmed_lawan.jpg" alt="primaries" height="200" width="200"></div>
+                <div class="text"><p>You can now lick you wounds <br> Tinubu tells Ahmed Lawan</p></div>
+            </a>
+
+            <a id="redirect" href="Tambuwal steps down for Atiku.html ">
+                <div class="pic"><img src="./img/Tambuwal and Atiku.jpg" alt="step down" height="200" width="200"></div>
+                <div class="text"><p>Tambuwal steps down for Atiku</p></div>
+            </a>
+
+            <a id="redirect" href="Peter Obi Decamps from Pdp.html">
+                <div class="pic"><img src="./img/Peter Obi.jpg" alt="obi" height="200" width="200"></div>
+                <div class="text"><p>Peter Obi Decamps from Pdp</p></div>
+            </a>
+         </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "~/Views/Shared/Pages.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/StyleSheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="con">
+        <h1>Apc Wins Ekiti Guber Election</h1>
+        <div class="lab">
+            <label for="">19 June, 2022</label>
+        </div>
+        <img src="../img/oyebanji.jpg" alt="oyebanji">
+        <p>
+            The apc candidate Biodun Oyebanji has officially been declared winner
+            of the Ekiti State governorship election
+        </p>
+
+        <p>
+            Mr Oyebanji secured 187,057 votes to defeat his closest challengers, Segun Oni of the Social Democratic Party (SDP) who polled 82,211, 
+            and Bisi Kolawole of the Peoples Democratic Party who scored 67, 457 votes.
+           Out of the 16 local government areas in the state, Mr Oyebanji won 15 – Irepodun/Ifelodun, Ilejemeje, Moba, Ado-Ekiti, Ijero, Ekiti Southwest, Ido-Osi, Ise-Orun, Gbonyin, Oye, Ekiti West, Ikere, Emure, Ikole.
+        </p>
+    </div>
+
+    <div class="list">
+        <h3>
+            Number of votes according to Political parties
+        </h3>
+
+        <ul>
+            <li>ADC - 5,997</li>
+            <li>AAC - 409</li>
+            <li>APC - 187,057</li>
+            <li>APGA - 376</li>
+            <li>SDP - 82,211</li>
+            <li>LP -195</li>
+            <li>PDP - 67,457</li>
+            <li>YPP - 618</li>
+        </ul>
+    </div>
+
+    <div class="nexprev">
+        <a id="redirect" asp-controller="Apc" asp-action ="YouCanLickYourWounds">
+         <h4>Previous article</h4>
+         <p>You can now lick your wounds Tinubu tells Ahmed lawan</p>   
+        </a>
+
+        <a id="redirect" asp-controller="Apc" asp-action ="TinubuMeetsWithNANSLeaders">
+            <h4>Next article</h4>
+            <p>Tinubu meets with NANS leaders says he will intervene in the asuu strike</p>   
+           </a>
+    </div>
+
+</body>
+</html> 
